@@ -1,0 +1,16 @@
+meta:
+  storage:
+    type: fs
+    path: /var/artipie/repo
+  credentials:
+    - type: artipie
+  policy:
+    type: artipie
+    storage:
+      type: fs
+      path: /var/artipie/security
+  layout: org
+  base_url: http://localhost:8086/
+  metrics:
+    port: 8087
+    endpoint: "/metrics"

@@ -1,0 +1,29 @@
+version: "3.8"
+#
+#services:
+##  p:
+##    container_name: pu
+##    image: pulumi/pulumi-nodejs:3.47.1
+##    command: tail -f /dev/null
+#
+services:
+  artipie:
+    platform: linux/amd64
+    image: artipie/artipie:v0.29.3
+    container_name: artipie
+    volumes:
+      - "./artipie/data/repo:/var/artipie/repo"
+      - "./artipie/data/security:/var/artipie/security"
+      - "./artipie/config:/etc/artipie"
+    ports:
+      - "8081:8080"
+      - "8086:8086"
+      - "8087:8087"
+#  front:
+#    platform: linux/amd64
+#    image: artipie/front:v0.1.5
+#    container_name: front
+#    environment:
+#      - ARTIPIE_REST=http://artipie:8086
+#    ports:
+#      - "8080:8080"

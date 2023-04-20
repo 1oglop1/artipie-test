@@ -1,0 +1,5 @@
+type: plain
+pass: admin
+email: artipie@example.com
+roles:
+  - admin
