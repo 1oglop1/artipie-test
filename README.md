@@ -73,6 +73,7 @@ NPM steps
     ```
     export NPM_PAT_TOKEN=<your token>
     ```
+4. `npm publish .`
 
 Observe success
 ```
