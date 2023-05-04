@@ -1,0 +1,11 @@
+`brew install httpie`
+or
+`snap install httpie`
+
+http POST localhost:8086/api/v1/oauth/token name=artipie pass=artipie
+
+http POST localhost:8086/api/v1/oauth/token name=artipie pass=admin | jq -r .token
+http POST localhost:8086/api/v1/oauth/token name=admin pass=admin | jq -j .token | pbcopy
+
+npm set registry http://{host}:{port}/{repository-name}
+

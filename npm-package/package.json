@@ -1,0 +1,14 @@
+{
+  "name": "@1oglop1/npm-package",
+  "version": "1.0.8",
+  "description": "test package",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "1oglop1",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  }
+}

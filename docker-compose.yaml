@@ -9,7 +9,7 @@ version: "3.8"
 services:
   artipie:
     platform: linux/amd64
-    image: artipie/artipie:v0.29.3
+    image: artipie/artipie:v0.30.0
     container_name: artipie
     volumes:
       - "./artipie/data/repo:/var/artipie/repo"
